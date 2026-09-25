@@ -1,0 +1,68 @@
+[
+  {
+    "label": "Só dormência no território do mediano: 3,5",
+    "input": {
+      "dorm": true
+    },
+    "expected": {
+      "score": 3.5,
+      "level": "low"
+    },
+    "originalInput": {
+      "dorm": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Dormência noturna + Phalen: 9",
+    "input": {
+      "noturna": true,
+      "phalen": true
+    },
+    "expected": {
+      "score": 9,
+      "level": "mid"
+    },
+    "originalInput": {
+      "noturna": true,
+      "phalen": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Dormência no mediano + noturna + Tinel: 11,5 (ainda intermediária)",
+    "input": {
+      "dorm": true,
+      "noturna": true,
+      "tinel": true
+    },
+    "expected": {
+      "score": 11.5,
+      "level": "mid"
+    },
+    "originalInput": {
+      "dorm": true,
+      "noturna": true,
+      "tinel": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Dormência noturna + Phalen + Tinel: 13",
+    "input": {
+      "noturna": true,
+      "phalen": true,
+      "tinel": true
+    },
+    "expected": {
+      "score": 13,
+      "level": "high"
+    },
+    "originalInput": {
+      "noturna": true,
+      "phalen": true,
+      "tinel": true
+    },
+    "expandedZeroOptions": []
+  }
+]

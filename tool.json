@@ -1,0 +1,260 @@
+{
+  "tool": {
+    "id": "cts-6",
+    "title": "CTS-6 (síndrome do túnel do carpo)",
+    "short": "Probabilidade clínica de túnel do carpo",
+    "desc": "CTS-6: seis achados de história e exame físico que estimam a probabilidade clínica de síndrome do túnel do carpo antes da eletroneuromiografia.",
+    "lead": "Estima a probabilidade de síndrome do túnel do carpo a partir de dois sintomas e quatro achados de exame, em adultos com queixa na mão.",
+    "spec": [
+      "cirurgia-da-mao",
+      "ortopedia-e-traumatologia",
+      "neurologia",
+      "medicina-fisica-e-reabilitacao"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "dorm",
+        "Dormência predominante ou exclusiva no território do nervo mediano",
+        "chk",
+        {
+          "pts": 3.5
+        }
+      ],
+      [
+        "noturna",
+        "Dormência noturna",
+        "chk",
+        {
+          "pts": 4
+        }
+      ],
+      [
+        "atrofia",
+        "Atrofia e/ou fraqueza da musculatura tenar",
+        "chk",
+        {
+          "pts": 5
+        }
+      ],
+      [
+        "phalen",
+        "Teste de Phalen positivo",
+        "chk",
+        {
+          "pts": 5
+        }
+      ],
+      [
+        "dpp",
+        "Perda da discriminação de dois pontos (&gt; 6 mm)",
+        "chk",
+        {
+          "pts": 4.5
+        }
+      ],
+      [
+        "tinel",
+        "Sinal de Tinel positivo sobre o túnel do carpo",
+        "chk",
+        {
+          "pts": 4
+        }
+      ]
+    ],
+    "score": {
+      "label": "CTS-6",
+      "unit": "de 26",
+      "bands": [
+        [
+          0,
+          "low",
+          "Probabilidade baixa de síndrome do túnel do carpo (abaixo de cerca de 25%)",
+          "Considere diagnósticos alternativos (radiculopatia cervical, polineuropatia)."
+        ],
+        [
+          5,
+          "mid",
+          "Probabilidade intermediária (entre cerca de 25% e 80%)",
+          "A eletroneuromiografia tem mais valor nesta faixa."
+        ],
+        [
+          12,
+          "high",
+          "Alta probabilidade de síndrome do túnel do carpo (cerca de 80% ou mais)",
+          "Nesta faixa, a eletroneuromiografia raramente muda o diagnóstico clínico."
+        ]
+      ]
+    },
+    "formula": "<p>Soma dos itens presentes: dormência no território do mediano 3,5; dormência noturna 4; atrofia/fraqueza tenar 5; Phalen positivo 5; perda da discriminação de dois pontos 4,5; Tinel positivo 4. Total de 0 a 26.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Probabilidade de STC"
+      ],
+      [
+        "&lt; 5",
+        "Baixa (&lt; 25%)"
+      ],
+      [
+        "5 a 11,5",
+        "Intermediária"
+      ],
+      [
+        "≥ 12",
+        "Alta (≈ 80% ou mais)"
+      ]
+    ],
+    "tips": [
+      "Graham (2008) mostrou que, com probabilidade pré-teste ≥ 0,80, a eletroneuromiografia quase não muda o diagnóstico; ela é mais útil nos escores intermediários.",
+      "Phalen: flexão máxima do punho por 60 segundos reproduzindo parestesias no território do mediano.",
+      "Discriminação de dois pontos: considere alterada acima de 6 mm na polpa dos dedos radiais.",
+      "Atrofia tenar indica doença avançada: não retarde a descompressão cirúrgica aguardando tratamento conservador.",
+      "Mesmo com escore alto, a eletroneuromiografia pode ser pedida para graduar a gravidade ou diante de dúvida com radiculopatia C6–C7."
+    ],
+    "sources": [
+      [
+        "Graham B et al. Development and validation of diagnostic criteria for carpal tunnel syndrome. J Hand Surg Am, 2006.",
+        "https://doi.org/10.1016/j.jhsa.2006.03.005"
+      ],
+      [
+        "Graham B. The value added by electrodiagnostic testing in the diagnosis of carpal tunnel syndrome. J Bone Joint Surg Am, 2008.",
+        "https://doi.org/10.2106/JBJS.G.01362"
+      ]
+    ],
+    "cases": [
+      [
+        "Só dormência no território do mediano: 3,5",
+        {
+          "dorm": true
+        },
+        {
+          "score": 3.5,
+          "level": "low"
+        }
+      ],
+      [
+        "Dormência noturna + Phalen: 9",
+        {
+          "noturna": true,
+          "phalen": true
+        },
+        {
+          "score": 9,
+          "level": "mid"
+        }
+      ],
+      [
+        "Dormência no mediano + noturna + Tinel: 11,5 (ainda intermediária)",
+        {
+          "dorm": true,
+          "noturna": true,
+          "tinel": true
+        },
+        {
+          "score": 11.5,
+          "level": "mid"
+        }
+      ],
+      [
+        "Dormência noturna + Phalen + Tinel: 13",
+        {
+          "noturna": true,
+          "phalen": true,
+          "tinel": true
+        },
+        {
+          "score": 13,
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "cirurgia-sentidos",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 26",
+      "label": "CTS-6",
+      "fields": [
+        [
+          "dorm",
+          "chk",
+          3.5
+        ],
+        [
+          "noturna",
+          "chk",
+          4
+        ],
+        [
+          "atrofia",
+          "chk",
+          5
+        ],
+        [
+          "phalen",
+          "chk",
+          5
+        ],
+        [
+          "dpp",
+          "chk",
+          4.5
+        ],
+        [
+          "tinel",
+          "chk",
+          4
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "Probabilidade baixa de síndrome do túnel do carpo (abaixo de cerca de 25%)",
+          "Considere diagnósticos alternativos (radiculopatia cervical, polineuropatia)."
+        ],
+        [
+          5,
+          "mid",
+          "Probabilidade intermediária (entre cerca de 25% e 80%)",
+          "A eletroneuromiografia tem mais valor nesta faixa."
+        ],
+        [
+          12,
+          "high",
+          "Alta probabilidade de síndrome do túnel do carpo (cerca de 80% ou mais)",
+          "Nesta faixa, a eletroneuromiografia raramente muda o diagnóstico clínico."
+        ]
+      ]
+    },
+    "areaId": "cirurgia-sentidos",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/cirurgia-sentidos.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/cirurgia-sentidos.php",
+    "sha256": "21fc91a9a8187a66496f68c2ac8fbdd20a65ceeea519687c963b857f72640866",
+    "bytes": 89063
+  },
+  "clinicalValidation": "not-performed"
+}
