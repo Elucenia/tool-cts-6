@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-cts-6 · Elucenia · https://github.com/Elucenia/tool-cts-6
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"cts-6","title":"CTS-6 (síndrome do túnel do carpo)","fields":[["dorm","Dormência predominante ou exclusiva no território do nervo mediano","chk",{"pts":3.5}],["noturna","Dormência noturna","chk",{"pts":4}],["atrofia","Atrofia e/ou fraqueza da musculatura tenar","chk",{"pts":5}],["phalen","Teste de Phalen positivo","chk",{"pts":5}],["dpp","Perda da discriminação de dois pontos (&gt; 6 mm)","chk",{"pts":4.5}],["tinel","Sinal de Tinel positivo sobre o túnel do carpo","chk",{"pts":4}]],"config":{"unit":"de 26","label":"CTS-6","fields":[["dorm","chk",3.5],["noturna","chk",4],["atrofia","chk",5],["phalen","chk",5],["dpp","chk",4.5],["tinel","chk",4]],"bands":[[0,"low","Probabilidade baixa de síndrome do túnel do carpo (abaixo de cerca de 25%)","Considere diagnósticos alternativos (radiculopatia cervical, polineuropatia)."],[5,"mid","Probabilidade intermediária (entre cerca de 25% e 80%)","A eletroneuromiografia tem mais valor nesta faixa."],[12,"high","Alta probabilidade de síndrome do túnel do carpo (cerca de 80% ou mais)","Nesta faixa, a eletroneuromiografia raramente muda o diagnóstico clínico."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
