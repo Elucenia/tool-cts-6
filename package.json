@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-cts-6",
   "version": "0.1.0",
-  "description": "CTS-6 (síndrome do túnel do carpo) · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "CTS-6 (síndrome do túnel do carpo) · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
