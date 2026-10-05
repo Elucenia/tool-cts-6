@@ -1,68 +1,163 @@
 [
   {
-    "label": "Só dormência no território do mediano: 3,5",
-    "input": {
+    "id": "cts-6",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Só dormência no território do mediano: 3,5",
+    "originalInput": {
       "dorm": true
+    },
+    "input": {
+      "dorm": true,
+      "noturna": false,
+      "atrofia": false,
+      "phalen": false,
+      "dpp": false,
+      "tinel": false
     },
     "expected": {
       "score": 3.5,
       "level": "low"
     },
-    "originalInput": {
-      "dorm": true
+    "recordedResult": {
+      "main": [
+        "3,5",
+        "de 26"
+      ],
+      "label": "CTS-6",
+      "raw": {
+        "score": 3.5
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Dormência noturna + Phalen: 9",
-    "input": {
+    "id": "cts-6",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Dormência noturna + Phalen: 9",
+    "originalInput": {
       "noturna": true,
       "phalen": true
+    },
+    "input": {
+      "noturna": true,
+      "phalen": true,
+      "dorm": false,
+      "atrofia": false,
+      "dpp": false,
+      "tinel": false
     },
     "expected": {
       "score": 9,
       "level": "mid"
     },
-    "originalInput": {
-      "noturna": true,
-      "phalen": true
+    "recordedResult": {
+      "main": [
+        "9",
+        "de 26"
+      ],
+      "label": "CTS-6",
+      "raw": {
+        "score": 9
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Dormência no mediano + noturna + Tinel: 11,5 (ainda intermediária)",
-    "input": {
+    "id": "cts-6",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Dormência no mediano + noturna + Tinel: 11,5 (ainda intermediária)",
+    "originalInput": {
       "dorm": true,
       "noturna": true,
       "tinel": true
+    },
+    "input": {
+      "dorm": true,
+      "noturna": true,
+      "tinel": true,
+      "atrofia": false,
+      "phalen": false,
+      "dpp": false
     },
     "expected": {
       "score": 11.5,
       "level": "mid"
     },
-    "originalInput": {
-      "dorm": true,
-      "noturna": true,
-      "tinel": true
+    "recordedResult": {
+      "main": [
+        "11,5",
+        "de 26"
+      ],
+      "label": "CTS-6",
+      "raw": {
+        "score": 11.5
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Dormência noturna + Phalen + Tinel: 13",
-    "input": {
+    "id": "cts-6",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Dormência noturna + Phalen + Tinel: 13",
+    "originalInput": {
       "noturna": true,
       "phalen": true,
       "tinel": true
+    },
+    "input": {
+      "noturna": true,
+      "phalen": true,
+      "tinel": true,
+      "dorm": false,
+      "atrofia": false,
+      "dpp": false
     },
     "expected": {
       "score": 13,
       "level": "high"
     },
-    "originalInput": {
-      "noturna": true,
-      "phalen": true,
-      "tinel": true
+    "recordedResult": {
+      "main": [
+        "13",
+        "de 26"
+      ],
+      "label": "CTS-6",
+      "raw": {
+        "score": 13
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

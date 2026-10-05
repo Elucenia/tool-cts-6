@@ -5,113 +5,52 @@
     "short": "Probabilidade clínica de túnel do carpo",
     "desc": "CTS-6: seis achados de história e exame físico que estimam a probabilidade clínica de síndrome do túnel do carpo antes da eletroneuromiografia.",
     "lead": "Estima a probabilidade de síndrome do túnel do carpo a partir de dois sintomas e quatro achados de exame, em adultos com queixa na mão.",
+    "kind": "Escore",
     "spec": [
       "cirurgia-da-mao",
       "ortopedia-e-traumatologia",
       "neurologia",
       "medicina-fisica-e-reabilitacao"
     ],
-    "tier": 1,
     "fields": [
       [
         "dorm",
         "Dormência predominante ou exclusiva no território do nervo mediano",
         "chk",
-        {
-          "pts": 3.5
-        }
+        {}
       ],
       [
         "noturna",
         "Dormência noturna",
         "chk",
-        {
-          "pts": 4
-        }
+        {}
       ],
       [
         "atrofia",
         "Atrofia e/ou fraqueza da musculatura tenar",
         "chk",
-        {
-          "pts": 5
-        }
+        {}
       ],
       [
         "phalen",
         "Teste de Phalen positivo",
         "chk",
-        {
-          "pts": 5
-        }
+        {}
       ],
       [
         "dpp",
         "Perda da discriminação de dois pontos (&gt; 6 mm)",
         "chk",
-        {
-          "pts": 4.5
-        }
+        {}
       ],
       [
         "tinel",
         "Sinal de Tinel positivo sobre o túnel do carpo",
         "chk",
-        {
-          "pts": 4
-        }
+        {}
       ]
     ],
-    "score": {
-      "label": "CTS-6",
-      "unit": "de 26",
-      "bands": [
-        [
-          0,
-          "low",
-          "Probabilidade baixa de síndrome do túnel do carpo (abaixo de cerca de 25%)",
-          "Considere diagnósticos alternativos (radiculopatia cervical, polineuropatia)."
-        ],
-        [
-          5,
-          "mid",
-          "Probabilidade intermediária (entre cerca de 25% e 80%)",
-          "A eletroneuromiografia tem mais valor nesta faixa."
-        ],
-        [
-          12,
-          "high",
-          "Alta probabilidade de síndrome do túnel do carpo (cerca de 80% ou mais)",
-          "Nesta faixa, a eletroneuromiografia raramente muda o diagnóstico clínico."
-        ]
-      ]
-    },
     "formula": "<p>Soma dos itens presentes: dormência no território do mediano 3,5; dormência noturna 4; atrofia/fraqueza tenar 5; Phalen positivo 5; perda da discriminação de dois pontos 4,5; Tinel positivo 4. Total de 0 a 26.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Probabilidade de STC"
-      ],
-      [
-        "&lt; 5",
-        "Baixa (&lt; 25%)"
-      ],
-      [
-        "5 a 11,5",
-        "Intermediária"
-      ],
-      [
-        "≥ 12",
-        "Alta (≈ 80% ou mais)"
-      ]
-    ],
-    "tips": [
-      "Graham (2008) mostrou que, com probabilidade pré-teste ≥ 0,80, a eletroneuromiografia quase não muda o diagnóstico; ela é mais útil nos escores intermediários.",
-      "Phalen: flexão máxima do punho por 60 segundos reproduzindo parestesias no território do mediano.",
-      "Discriminação de dois pontos: considere alterada acima de 6 mm na polpa dos dedos radiais.",
-      "Atrofia tenar indica doença avançada: não retarde a descompressão cirúrgica aguardando tratamento conservador.",
-      "Mesmo com escore alto, a eletroneuromiografia pode ser pedida para graduar a gravidade ou diante de dúvida com radiculopatia C6–C7."
-    ],
     "sources": [
       [
         "Graham B et al. Development and validation of diagnostic criteria for carpal tunnel syndrome. J Hand Surg Am, 2006.",
@@ -169,64 +108,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 26",
-      "label": "CTS-6",
-      "fields": [
-        [
-          "dorm",
-          "chk",
-          3.5
-        ],
-        [
-          "noturna",
-          "chk",
-          4
-        ],
-        [
-          "atrofia",
-          "chk",
-          5
-        ],
-        [
-          "phalen",
-          "chk",
-          5
-        ],
-        [
-          "dpp",
-          "chk",
-          4.5
-        ],
-        [
-          "tinel",
-          "chk",
-          4
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Probabilidade baixa de síndrome do túnel do carpo (abaixo de cerca de 25%)",
-          "Considere diagnósticos alternativos (radiculopatia cervical, polineuropatia)."
-        ],
-        [
-          5,
-          "mid",
-          "Probabilidade intermediária (entre cerca de 25% e 80%)",
-          "A eletroneuromiografia tem mais valor nesta faixa."
-        ],
-        [
-          12,
-          "high",
-          "Alta probabilidade de síndrome do túnel do carpo (cerca de 80% ou mais)",
-          "Nesta faixa, a eletroneuromiografia raramente muda o diagnóstico clínico."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -235,17 +116,510 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T19:23:48.179Z",
+      "total": 64,
+      "passed": 64,
+      "sourceRowCount": 64,
+      "uniqueApiInputCount": 64,
+      "sourceContextCount": 64,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "25c4fc0f47394f2f51f7e9a6b3cf4c9e41c769aec1eae8beb3903a29d22527a9",
+        "total": 64,
+        "bankRowCount": 64,
+        "uniqueApiInputCount": 64,
+        "sourceContextCount": 64,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/eight-diagnostic-independent-expectations-final26.json",
+            "sha256": "152a977a91b3f4279cac6a749638cae27a306f0bb072fa2400843da0db1e8268"
+          },
+          {
+            "file": "reports/review-20261003/eight-diagnostic-primary-source-review-final26.json",
+            "sha256": "8e4fe23dcd12fa323c509ec5432d30d841fe378f42ce1b05abc2724fa540481b"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/eight-diagnostic-independent-source-check-final26.json",
+          "sha256": "9925c0c432d78f268a3a5dd4d52cef5de566b192d5c3de6e7bbd6895eaf9d2b5"
+        },
+        "packagingRequirement": "Compose separately owned source/rubric/edition changes and fresh build/package/browser bindings before publication."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 64,
+        "uniqueApiInputs": 64,
+        "duplicateRows": 0,
+        "expectationAudit": {
+          "file": "reports/review-20261003/eight-diagnostic-independent-expectations-final26.json",
+          "sha256": "152a977a91b3f4279cac6a749638cae27a306f0bb072fa2400843da0db1e8268"
+        }
+      },
+      "scope": "rounded26-point scale weights in later primary tables, not original2006 logistic coefficients or measurement thresholds; only exact raw.score projected, no diagnosis/risk/rubric approval.",
+      "sources": [
+        {
+          "contributedPrimaryObservations": {
+            "file": "reports/review-20261003/eight-diagnostic-primary-source-review-final26.json",
+            "sha256": "8e4fe23dcd12fa323c509ec5432d30d841fe378f42ce1b05abc2724fa540481b"
+          },
+          "id": "cts-6",
+          "edition": "Graham2006 development original; primary occupational study2012 PMC3480831 and Chen/Fowler2021/2023 PMC10152524 weighted scale",
+          "urls": [
+            "https://pubmed.ncbi.nlm.nih.gov/16886290/",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC3480831/",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC10152524/",
+            "https://www.researchgate.net/publication/6901103_Development_and_Validation_of_Diagnostic_Criteria_for_Carpal_Tunnel_Syndrome"
+          ],
+          "files": [
+            "cts2006-pubmed.xml",
+            "cts2012-pmc.xml",
+            "cts2021-pmc.xml"
+          ],
+          "access": "Original2006 abstract via official NCBI XML read in full; author-uploaded original AppendixB indexed text read.2012 primary Methods and2021 primary Table1/Methods directly read from archived original article content.2014 secondary review not used as oracle.",
+          "population": "The2006 original develops criteria using expert panels and hypothetical case profiles; later primary weighted-scale research populations differ. These synthetic six-flag combinations do not establish patient diagnostic accuracy.",
+          "rules": {
+            "medianNumbness": 3.5,
+            "nocturnalNumbness": 4,
+            "thenarWeaknessAtrophy": 5,
+            "Phalen": 5,
+            "twoPointDiscrimination": 4.5,
+            "Tinel": 4
+          },
+          "findings": [
+            {
+              "area": "edition/scale provenance",
+              "status": "edition distinction",
+              "source": "Original2006 AppendixB has regression coefficients, distinct from the rounded26-point scale; later primary papers explicitly list the rounded weights.",
+              "current": "Numeric weighted sums can be checked, but this is not a full verification of the2006 original logistic model."
+            },
+            {
+              "area": "two-point discrimination",
+              "status": "source threshold variant pending original definition",
+              "source": "Chen/Fowler primary Table1 labels>5mm; current field labels>6mm.",
+              "current": "The flag weight4.5 is tested; the measurement threshold is excluded from approval."
+            }
+          ],
+          "notVerified": [
+            "Original2006 full diagnostic instrument implementation, clinical cutoffs/probabilities, original2008 rubric, wording rights and agreement across>5/>6mm variants."
+          ],
+          "currentMethodVersion": "CTS 6/Graham 2006:6 critérios ponderados para túnelcarpo; exame clínico",
+          "currentToolSha256": "affe22b9e4efffb4e8f532fd6d5d0ef6c57b4bd7af7ad78528fee75ef0af3de2"
+        }
+      ],
+      "evidencePath": "reports/review-20261003/eight-diagnostic-independent-source-check-final26.json",
+      "evidenceSha256": "9925c0c432d78f268a3a5dd4d52cef5de566b192d5c3de6e7bbd6895eaf9d2b5",
+      "independentPeer": {
+        "status": "passed-scoped-numeric",
+        "evidence": {
+          "file": "reports/review-20261003/eight-diagnostic-numeric-independent-peer-verify-final27.json",
+          "sha256": "e7bddba5c7de286f91fa8c431512f512849302646394d88663afe8142e079a7d"
+        },
+        "scope": "Independent primary table/abstract reading, own selected-point expectations persisted before engines, exact numeric three-adapter Node/isolated Chromium. Clinical/risk/rubric/full-method conformance excluded; McIsaac final-clamp findings retained and excluded from this six-method projection."
+      },
+      "freshAdapterExecutions": 192,
+      "freshVmExecutions": 192,
+      "actualBrowserEvidenceScope": "Old actual Chromium receipt uses only website adapter; three adapters have independently completed Node/VM and new Verify Chromium peer. This bank explicitly names original website-only browser observations; no reassignment to other mirrors.",
+      "implementations": [
+        {
+          "id": "cts-6",
+          "app": "website",
+          "file": "apps/website/private/tool-code/cts-6/calculator.js",
+          "sha256": "b4067c23d401fc39d0a75a3f8ea50e6e97d823128c134d12632a0966eb1c376f"
+        },
+        {
+          "id": "cts-6",
+          "app": "dashboard",
+          "file": "apps/dashboard/private/tool-code/cts-6/calculator.js",
+          "sha256": "b4067c23d401fc39d0a75a3f8ea50e6e97d823128c134d12632a0966eb1c376f"
+        },
+        {
+          "id": "cts-6",
+          "app": "command-center",
+          "file": "apps/command-center/private/tool-code/cts-6/calculator.js",
+          "sha256": "b4067c23d401fc39d0a75a3f8ea50e6e97d823128c134d12632a0966eb1c376f"
+        }
+      ],
+      "qualifications": [
+        "Original2006 full diagnostic instrument implementation, clinical cutoffs/probabilities, original2008 rubric, wording rights and agreement across>5/>6mm variants.",
+        "Primary-source reading and access are recorded by the contributing source reviewer and independent numeric peer; this integration does not claim another full source reading.",
+        "Only raw.score selected-point arithmetic is included. Clinical categories, main text, private level/verdict/note/rows, prognosis, diagnosis, management and unmeasured feature classification are excluded.",
+        "All source scenarios in this bank and the original donor reports remain retained. Mirror/runtime calculations do not multiply scenario counts. Inline four examples are a subset of the complete downloadable bank.",
+        "Source fields, rubric/edition labels, clinical scope notes and localization changes have separate ownership and must be composed without replacing whole catalogs. All862 historic fixtures/tolerances and approval flags remain unchanged.",
+        "Fresh source/build/packages and browser journey bindings are required before publication. No already-served website or final package proof is claimed by this preparation."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "metadataPackagingPeer": {
+        "status": "passed",
+        "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+        "peer": {
+          "file": "reports/review-20261003/six-diagnostic-bank-metadata-independent-review-western-final27.json",
+          "sha256": "8f308a904c18e2d57f6d6b37c660021e399df5bd766589b89c9c03f2fa7d141c"
+        },
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "prospectiveSource27Bindings": [
+        {
+          "file": "apps/website/private/tool-code/cts-6/calculator.js",
+          "sha256": "b4067c23d401fc39d0a75a3f8ea50e6e97d823128c134d12632a0966eb1c376f"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/cts-6/calculator.js",
+          "sha256": "b4067c23d401fc39d0a75a3f8ea50e6e97d823128c134d12632a0966eb1c376f"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/cts-6/calculator.js",
+          "sha256": "b4067c23d401fc39d0a75a3f8ea50e6e97d823128c134d12632a0966eb1c376f"
+        }
+      ],
+      "prospectiveSource27Replay": {
+        "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+        "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "CTS 6/Graham 2006:6 critérios ponderados para túnelcarpo; exame clínico",
+    "implementationVersion": "cts-6@native-2026-10-03+b4067c23d401",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/16886290/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Soma dos itens presentes: dormência no território do mediano 3,5; dormência noturna 4; atrofia/fraqueza tenar 5; Phalen positivo 5; perda da discriminação de dois pontos 4,5; Tinel positivo 4. Total de 0 a 26.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "dorm",
+            "label": "Dormência predominante ou exclusiva no território do nervo mediano",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "noturna",
+            "label": "Dormência noturna",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "atrofia",
+            "label": "Atrofia e/ou fraqueza da musculatura tenar",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "phalen",
+            "label": "Teste de Phalen positivo",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "dpp",
+            "label": "Perda da discriminação de dois pontos (&gt; 6 mm)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "tinel",
+            "label": "Sinal de Tinel positivo sobre o túnel do carpo",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "00f07aea0de818cab0568225e38da86cf146f2f1e6a9624cc3694b6be236b9b8"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Graham B et al. Development and validation of diagnostic criteria for carpal tunnel syndrome. J Hand Surg Am, 2006.",
+          "url": "https://doi.org/10.1016/j.jhsa.2006.03.005",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Development and validation of diagnostic criteria for carpal tunnel syndrome.",
+            "year": "2006",
+            "firstPublicationDate": "2006-07-01",
+            "doi": "10.1016/j.jhsa.2006.04.007",
+            "pmid": "16886290",
+            "journal": "The Journal of hand surgery",
+            "authors": "Graham B, Regehr G, Naglie G, Wright JG."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/16886290/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "fd66d16e577f4b737fd714c4b5ce3bcbd632ce2eb923e5f1ba7e977449349435",
+          "matchedBy": "exact-publication-title",
+          "publisherDepositedMetadata": {
+            "title": "Development and Validation of Diagnostic Criteria for Carpal Tunnel Syndrome",
+            "doi": "10.1016/j.jhsa.2006.03.005",
+            "year": 2006,
+            "publisher": "Elsevier BV",
+            "journal": "The Journal of Hand Surgery",
+            "authors": [
+              "Brent Graham",
+              "Glenn Regehr",
+              "Gary Naglie",
+              "James G. Wright"
+            ],
+            "url": "https://doi.org/10.1016/j.jhsa.2006.03.005"
+          },
+          "doiAliasOrMismatchRequiresReview": {
+            "listed": "https://doi.org/10.1016/j.jhsa.2006.03.005",
+            "indexed": "10.1016/j.jhsa.2006.04.007",
+            "crossrefListedDoiMetadataRead": true
+          }
+        },
+        {
+          "citation": "Graham B. The value added by electrodiagnostic testing in the diagnosis of carpal tunnel syndrome. J Bone Joint Surg Am, 2008.",
+          "url": "https://doi.org/10.2106/JBJS.G.01362",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The value added by electrodiagnostic testing in the diagnosis of carpal tunnel syndrome.",
+            "year": "2008",
+            "firstPublicationDate": "2008-12-01",
+            "doi": "10.2106/jbjs.g.01362",
+            "pmid": "19047703",
+            "journal": "The Journal of bone and joint surgery. American volume",
+            "authors": "Graham B."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/19047703/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "a71d42906653420415c8eff5e93c216f9b8483219168a5b59a44c064154cbc0f",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T19:23:48.179Z",
+        "total": 64,
+        "passed": 64,
+        "sourceRowCount": 64,
+        "uniqueApiInputCount": 64,
+        "sourceContextCount": 64,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "25c4fc0f47394f2f51f7e9a6b3cf4c9e41c769aec1eae8beb3903a29d22527a9",
+          "total": 64,
+          "bankRowCount": 64,
+          "uniqueApiInputCount": 64,
+          "sourceContextCount": 64,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/eight-diagnostic-independent-expectations-final26.json",
+              "sha256": "152a977a91b3f4279cac6a749638cae27a306f0bb072fa2400843da0db1e8268"
+            },
+            {
+              "file": "reports/review-20261003/eight-diagnostic-primary-source-review-final26.json",
+              "sha256": "8e4fe23dcd12fa323c509ec5432d30d841fe378f42ce1b05abc2724fa540481b"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/eight-diagnostic-independent-source-check-final26.json",
+            "sha256": "9925c0c432d78f268a3a5dd4d52cef5de566b192d5c3de6e7bbd6895eaf9d2b5"
+          },
+          "packagingRequirement": "Compose separately owned source/rubric/edition changes and fresh build/package/browser bindings before publication."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 64,
+          "uniqueApiInputs": 64,
+          "duplicateRows": 0,
+          "expectationAudit": {
+            "file": "reports/review-20261003/eight-diagnostic-independent-expectations-final26.json",
+            "sha256": "152a977a91b3f4279cac6a749638cae27a306f0bb072fa2400843da0db1e8268"
+          }
+        },
+        "scope": "rounded26-point scale weights in later primary tables, not original2006 logistic coefficients or measurement thresholds; only exact raw.score projected, no diagnosis/risk/rubric approval.",
+        "sources": [
+          {
+            "contributedPrimaryObservations": {
+              "file": "reports/review-20261003/eight-diagnostic-primary-source-review-final26.json",
+              "sha256": "8e4fe23dcd12fa323c509ec5432d30d841fe378f42ce1b05abc2724fa540481b"
+            },
+            "id": "cts-6",
+            "edition": "Graham2006 development original; primary occupational study2012 PMC3480831 and Chen/Fowler2021/2023 PMC10152524 weighted scale",
+            "urls": [
+              "https://pubmed.ncbi.nlm.nih.gov/16886290/",
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC3480831/",
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC10152524/",
+              "https://www.researchgate.net/publication/6901103_Development_and_Validation_of_Diagnostic_Criteria_for_Carpal_Tunnel_Syndrome"
+            ],
+            "files": [
+              "cts2006-pubmed.xml",
+              "cts2012-pmc.xml",
+              "cts2021-pmc.xml"
+            ],
+            "access": "Original2006 abstract via official NCBI XML read in full; author-uploaded original AppendixB indexed text read.2012 primary Methods and2021 primary Table1/Methods directly read from archived original article content.2014 secondary review not used as oracle.",
+            "population": "The2006 original develops criteria using expert panels and hypothetical case profiles; later primary weighted-scale research populations differ. These synthetic six-flag combinations do not establish patient diagnostic accuracy.",
+            "rules": {
+              "medianNumbness": 3.5,
+              "nocturnalNumbness": 4,
+              "thenarWeaknessAtrophy": 5,
+              "Phalen": 5,
+              "twoPointDiscrimination": 4.5,
+              "Tinel": 4
+            },
+            "findings": [
+              {
+                "area": "edition/scale provenance",
+                "status": "edition distinction",
+                "source": "Original2006 AppendixB has regression coefficients, distinct from the rounded26-point scale; later primary papers explicitly list the rounded weights.",
+                "current": "Numeric weighted sums can be checked, but this is not a full verification of the2006 original logistic model."
+              },
+              {
+                "area": "two-point discrimination",
+                "status": "source threshold variant pending original definition",
+                "source": "Chen/Fowler primary Table1 labels>5mm; current field labels>6mm.",
+                "current": "The flag weight4.5 is tested; the measurement threshold is excluded from approval."
+              }
+            ],
+            "notVerified": [
+              "Original2006 full diagnostic instrument implementation, clinical cutoffs/probabilities, original2008 rubric, wording rights and agreement across>5/>6mm variants."
+            ],
+            "currentMethodVersion": "CTS 6/Graham 2006:6 critérios ponderados para túnelcarpo; exame clínico",
+            "currentToolSha256": "affe22b9e4efffb4e8f532fd6d5d0ef6c57b4bd7af7ad78528fee75ef0af3de2"
+          }
+        ],
+        "evidencePath": "reports/review-20261003/eight-diagnostic-independent-source-check-final26.json",
+        "evidenceSha256": "9925c0c432d78f268a3a5dd4d52cef5de566b192d5c3de6e7bbd6895eaf9d2b5",
+        "independentPeer": {
+          "status": "passed-scoped-numeric",
+          "evidence": {
+            "file": "reports/review-20261003/eight-diagnostic-numeric-independent-peer-verify-final27.json",
+            "sha256": "e7bddba5c7de286f91fa8c431512f512849302646394d88663afe8142e079a7d"
+          },
+          "scope": "Independent primary table/abstract reading, own selected-point expectations persisted before engines, exact numeric three-adapter Node/isolated Chromium. Clinical/risk/rubric/full-method conformance excluded; McIsaac final-clamp findings retained and excluded from this six-method projection."
+        },
+        "freshAdapterExecutions": 192,
+        "freshVmExecutions": 192,
+        "actualBrowserEvidenceScope": "Old actual Chromium receipt uses only website adapter; three adapters have independently completed Node/VM and new Verify Chromium peer. This bank explicitly names original website-only browser observations; no reassignment to other mirrors.",
+        "implementations": [
+          {
+            "id": "cts-6",
+            "app": "website",
+            "file": "apps/website/private/tool-code/cts-6/calculator.js",
+            "sha256": "b4067c23d401fc39d0a75a3f8ea50e6e97d823128c134d12632a0966eb1c376f"
+          },
+          {
+            "id": "cts-6",
+            "app": "dashboard",
+            "file": "apps/dashboard/private/tool-code/cts-6/calculator.js",
+            "sha256": "b4067c23d401fc39d0a75a3f8ea50e6e97d823128c134d12632a0966eb1c376f"
+          },
+          {
+            "id": "cts-6",
+            "app": "command-center",
+            "file": "apps/command-center/private/tool-code/cts-6/calculator.js",
+            "sha256": "b4067c23d401fc39d0a75a3f8ea50e6e97d823128c134d12632a0966eb1c376f"
+          }
+        ],
+        "qualifications": [
+          "Original2006 full diagnostic instrument implementation, clinical cutoffs/probabilities, original2008 rubric, wording rights and agreement across>5/>6mm variants.",
+          "Primary-source reading and access are recorded by the contributing source reviewer and independent numeric peer; this integration does not claim another full source reading.",
+          "Only raw.score selected-point arithmetic is included. Clinical categories, main text, private level/verdict/note/rows, prognosis, diagnosis, management and unmeasured feature classification are excluded.",
+          "All source scenarios in this bank and the original donor reports remain retained. Mirror/runtime calculations do not multiply scenario counts. Inline four examples are a subset of the complete downloadable bank.",
+          "Source fields, rubric/edition labels, clinical scope notes and localization changes have separate ownership and must be composed without replacing whole catalogs. All862 historic fixtures/tolerances and approval flags remain unchanged.",
+          "Fresh source/build/packages and browser journey bindings are required before publication. No already-served website or final package proof is claimed by this preparation."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "metadataPackagingPeer": {
+          "status": "passed",
+          "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+          "peer": {
+            "file": "reports/review-20261003/six-diagnostic-bank-metadata-independent-review-western-final27.json",
+            "sha256": "8f308a904c18e2d57f6d6b37c660021e399df5bd766589b89c9c03f2fa7d141c"
+          },
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "prospectiveSource27Bindings": [
+          {
+            "file": "apps/website/private/tool-code/cts-6/calculator.js",
+            "sha256": "b4067c23d401fc39d0a75a3f8ea50e6e97d823128c134d12632a0966eb1c376f"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/cts-6/calculator.js",
+            "sha256": "b4067c23d401fc39d0a75a3f8ea50e6e97d823128c134d12632a0966eb1c376f"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/cts-6/calculator.js",
+            "sha256": "b4067c23d401fc39d0a75a3f8ea50e6e97d823128c134d12632a0966eb1c376f"
+          }
+        ],
+        "prospectiveSource27Replay": {
+          "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+          "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+        },
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "b4067c23d401fc39d0a75a3f8ea50e6e97d823128c134d12632a0966eb1c376f"
+    },
+    "limits": "O desenvolvimento Graham 2006 usou consenso de especialistas e histórias de casos combinando critérios clínicos; a validação descrita no resumo comparou probabilidades do modelo com julgamentos de outro painel. Esse desenho não estabelece, por si só, desempenho contra exame eletrofisiológico em cada população clínica. A pontuação de seis itens, seu corte e a faixa etária devem ser conferidos no método integral.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.792Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "DOI cadastrado difere do DOI no registro PMID 16886290; necessita correção bibliográfica confirmada. Idade adulta, pontuação final de seis itens e corte local não constam do resumo."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/cts-6/calculator.js",
+    "bytes": 5104,
+    "sha256": "b4067c23d401fc39d0a75a3f8ea50e6e97d823128c134d12632a0966eb1c376f"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "2b8bee5df1446d0bcb0acee97653dbcf28c69cb0862ae04ae641a516caee4a83",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "99d13afdcc23eb20c77bf050e22d7e5a2b8497d9c32299c14b2b6c94b5063872",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "99d13afdcc23eb20c77bf050e22d7e5a2b8497d9c32299c14b2b6c94b5063872",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

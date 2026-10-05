@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean dorm",
+    "input": {
+      "dorm": "2",
+      "noturna": false,
+      "atrofia": false,
+      "phalen": false,
+      "dpp": false,
+      "tinel": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dorm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean noturna",
+    "input": {
+      "dorm": true,
+      "noturna": "2",
+      "atrofia": false,
+      "phalen": false,
+      "dpp": false,
+      "tinel": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "noturna"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean atrofia",
+    "input": {
+      "dorm": true,
+      "noturna": false,
+      "atrofia": "2",
+      "phalen": false,
+      "dpp": false,
+      "tinel": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "atrofia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean phalen",
+    "input": {
+      "dorm": true,
+      "noturna": false,
+      "atrofia": false,
+      "phalen": "2",
+      "dpp": false,
+      "tinel": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "phalen"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean dpp",
+    "input": {
+      "dorm": true,
+      "noturna": false,
+      "atrofia": false,
+      "phalen": false,
+      "dpp": "2",
+      "tinel": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dpp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean tinel",
+    "input": {
+      "dorm": true,
+      "noturna": false,
+      "atrofia": false,
+      "phalen": false,
+      "dpp": false,
+      "tinel": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tinel"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
