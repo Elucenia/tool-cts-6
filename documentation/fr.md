@@ -77,3 +77,35 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Faible probabilité de syndrome du canal carpien (inférieure à environ 25%)
+
+Envisager des diagnostics alternatifs (radiculopathie cervicale, polyneuropathie).
+
+
+### 2
+
+Probabilité intermédiaire (entre environ 25% et 80%)
+
+L’électroneuromyographie est plus utile dans cette plage.
+
+
+### 3
+
+Probabilité intermédiaire (entre environ 25% et 80%)
+
+L’électroneuromyographie est plus utile dans cette plage.
+
+
+### 4
+
+Forte probabilité de syndrome du canal carpien (environ 80% ou plus)
+
+Dans cette plage, l’électroneuromyographie modifie rarement le diagnostic clinique.
+

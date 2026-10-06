@@ -1,0 +1,232 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "cts-6",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "60f27581da61c301f9b40e3faedf483f04b0bdbb",
+    "oldEngineSha256": "b4067c23d401fc39d0a75a3f8ea50e6e97d823128c134d12632a0966eb1c376f",
+    "currentEngineSha256": "ce2c99f8d150c70b18d7a03c299640937888c9f47d2418286d6cd466d4eaff93"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Só dormência no território do mediano: 3,5",
+      "input": {
+        "dorm": true,
+        "noturna": false,
+        "atrofia": false,
+        "phalen": false,
+        "dpp": false,
+        "tinel": false
+      },
+      "publicOutput": {
+        "id": "cts-6",
+        "main": [
+          "3,5",
+          "de 26"
+        ],
+        "label": "CTS-6",
+        "raw": {
+          "score": 3.5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 3.5,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3,5",
+          "de 26"
+        ],
+        "label": "CTS-6",
+        "level": "low",
+        "verdict": "Probabilidade baixa de síndrome do túnel do carpo (abaixo de cerca de 25%)",
+        "note": "Considere diagnósticos alternativos (radiculopatia cervical, polineuropatia).",
+        "raw": {
+          "score": 3.5
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Dormência noturna + Phalen: 9",
+      "input": {
+        "noturna": true,
+        "phalen": true,
+        "dorm": false,
+        "atrofia": false,
+        "dpp": false,
+        "tinel": false
+      },
+      "publicOutput": {
+        "id": "cts-6",
+        "main": [
+          "9",
+          "de 26"
+        ],
+        "label": "CTS-6",
+        "raw": {
+          "score": 9
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 9,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "9",
+          "de 26"
+        ],
+        "label": "CTS-6",
+        "level": "mid",
+        "verdict": "Probabilidade intermediária (entre cerca de 25% e 80%)",
+        "note": "A eletroneuromiografia tem mais valor nesta faixa.",
+        "raw": {
+          "score": 9
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Dormência no mediano + noturna + Tinel: 11,5 (ainda intermediária)",
+      "input": {
+        "dorm": true,
+        "noturna": true,
+        "tinel": true,
+        "atrofia": false,
+        "phalen": false,
+        "dpp": false
+      },
+      "publicOutput": {
+        "id": "cts-6",
+        "main": [
+          "11,5",
+          "de 26"
+        ],
+        "label": "CTS-6",
+        "raw": {
+          "score": 11.5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 11.5,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "11,5",
+          "de 26"
+        ],
+        "label": "CTS-6",
+        "level": "mid",
+        "verdict": "Probabilidade intermediária (entre cerca de 25% e 80%)",
+        "note": "A eletroneuromiografia tem mais valor nesta faixa.",
+        "raw": {
+          "score": 11.5
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Dormência noturna + Phalen + Tinel: 13",
+      "input": {
+        "noturna": true,
+        "phalen": true,
+        "tinel": true,
+        "dorm": false,
+        "atrofia": false,
+        "dpp": false
+      },
+      "publicOutput": {
+        "id": "cts-6",
+        "main": [
+          "13",
+          "de 26"
+        ],
+        "label": "CTS-6",
+        "raw": {
+          "score": 13
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 13,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "13",
+          "de 26"
+        ],
+        "label": "CTS-6",
+        "level": "high",
+        "verdict": "Alta probabilidade de síndrome do túnel do carpo (cerca de 80% ou mais)",
+        "note": "Nesta faixa, a eletroneuromiografia raramente muda o diagnóstico clínico.",
+        "raw": {
+          "score": 13
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

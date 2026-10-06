@@ -288,7 +288,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "CTS 6/Graham 2006:6 critérios ponderados para túnelcarpo; exame clínico",
-    "implementationVersion": "cts-6@native-2026-10-03+b4067c23d401",
+    "implementationVersion": "cts-6@native-2026-10-05+ce2c99f8d150",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/16886290/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -584,7 +584,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "b4067c23d401fc39d0a75a3f8ea50e6e97d823128c134d12632a0966eb1c376f"
+      "implementationHash": "ce2c99f8d150c70b18d7a03c299640937888c9f47d2418286d6cd466d4eaff93",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "cts-6@native-2026-10-03+b4067c23d401",
+          "previousImplementationHash": "b4067c23d401fc39d0a75a3f8ea50e6e97d823128c134d12632a0966eb1c376f",
+          "implementationHash": "ce2c99f8d150c70b18d7a03c299640937888c9f47d2418286d6cd466d4eaff93",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "00f07aea0de818cab0568225e38da86cf146f2f1e6a9624cc3694b6be236b9b8",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O desenvolvimento Graham 2006 usou consenso de especialistas e histórias de casos combinando critérios clínicos; a validação descrita no resumo comparou probabilidades do modelo com julgamentos de outro painel. Esse desenho não estabelece, por si só, desempenho contra exame eletrofisiológico em cada população clínica. A pontuação de seis itens, seu corte e a faixa etária devem ser conferidos no método integral.",
     "sourceLimitEvidence": {
@@ -603,20 +631,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/cts-6/calculator.js",
-    "bytes": 5104,
-    "sha256": "b4067c23d401fc39d0a75a3f8ea50e6e97d823128c134d12632a0966eb1c376f"
+    "bytes": 5309,
+    "sha256": "ce2c99f8d150c70b18d7a03c299640937888c9f47d2418286d6cd466d4eaff93"
   },
-  "sourceToolSha256": "2b8bee5df1446d0bcb0acee97653dbcf28c69cb0862ae04ae641a516caee4a83",
+  "sourceToolSha256": "fded22537d83ea1a261edd0f550602d7d127e297429df232cafcfa9d7989e313",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "99d13afdcc23eb20c77bf050e22d7e5a2b8497d9c32299c14b2b6c94b5063872",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "99d13afdcc23eb20c77bf050e22d7e5a2b8497d9c32299c14b2b6c94b5063872",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

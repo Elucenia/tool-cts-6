@@ -77,3 +77,35 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Low probability of carpal tunnel syndrome (below about 25%)
+
+Consider alternative diagnoses (cervical radiculopathy, polyneuropathy).
+
+
+### 2
+
+Intermediate probability (between about 25% and 80%)
+
+Electroneuromyography has more value in this range.
+
+
+### 3
+
+Intermediate probability (between about 25% and 80%)
+
+Electroneuromyography has more value in this range.
+
+
+### 4
+
+High probability of carpal tunnel syndrome (about 80% or more)
+
+In this range, electroneuromyography rarely changes the clinical diagnosis.
+

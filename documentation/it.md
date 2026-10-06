@@ -77,3 +77,35 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Bassa probabilità di sindrome del tunnel carpale (inferiore a circa il 25%)
+
+Considerare diagnosi alternative (radicolopatia cervicale, polineuropatia).
+
+
+### 2
+
+Probabilità intermedia (tra circa il 25% e l’80%)
+
+L’elettroneuromiografia ha più valore in questo intervallo.
+
+
+### 3
+
+Probabilità intermedia (tra circa il 25% e l’80%)
+
+L’elettroneuromiografia ha più valore in questo intervallo.
+
+
+### 4
+
+Alta probabilità di sindrome del tunnel carpale (circa l’80% o più)
+
+In questo intervallo, l’elettromiografia modifica raramente la diagnosi clinica.
+

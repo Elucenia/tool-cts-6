@@ -77,3 +77,35 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Baja probabilidad de síndrome del túnel carpiano (por debajo de aproximadamente el 25%)
+
+Considere diagnósticos alternativos (radiculopatía cervical, polineuropatía).
+
+
+### 2
+
+Probabilidad intermedia (entre aproximadamente el 25% y el 80%)
+
+La electroneuromiografía tiene más valor en este rango.
+
+
+### 3
+
+Probabilidad intermedia (entre aproximadamente el 25% y el 80%)
+
+La electroneuromiografía tiene más valor en este rango.
+
+
+### 4
+
+Alta probabilidad de síndrome del túnel carpiano (aproximadamente el 80% o más)
+
+En este rango, la electroneuromiografía rara vez cambia el diagnóstico clínico.
+

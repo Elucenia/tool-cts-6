@@ -1,0 +1,707 @@
+{
+  "id": "cts-6",
+  "implementationVersion": "cts-6@native-2026-10-05+ce2c99f8d150",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Só dormência no território do mediano: 3,5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilidade baixa de síndrome do túnel do carpo (abaixo de cerca de 25%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Considere diagnósticos alternativos (radiculopatia cervical, polineuropatia).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dormência noturna + Phalen: 9",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilidade intermediária (entre cerca de 25% e 80%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "A eletroneuromiografia tem mais valor nesta faixa.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dormência no mediano + noturna + Tinel: 11,5 (ainda intermediária)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilidade intermediária (entre cerca de 25% e 80%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "A eletroneuromiografia tem mais valor nesta faixa.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dormência noturna + Phalen + Tinel: 13",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alta probabilidade de síndrome do túnel do carpo (cerca de 80% ou mais)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Nesta faixa, a eletroneuromiografia raramente muda o diagnóstico clínico.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Só dormência no território do mediano: 3,5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Low probability of carpal tunnel syndrome (below about 25%)",
+            "locale": "en",
+            "template": "documented-authored-e06829abb2b68f58b061"
+          },
+          "note": {
+            "text": "Consider alternative diagnoses (cervical radiculopathy, polyneuropathy).",
+            "locale": "en",
+            "template": "documented-authored-c451a74239ea24766a6f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dormência noturna + Phalen: 9",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Intermediate probability (between about 25% and 80%)",
+            "locale": "en",
+            "template": "documented-authored-8c8211a71b664dacdcdf"
+          },
+          "note": {
+            "text": "Electroneuromyography has more value in this range.",
+            "locale": "en",
+            "template": "documented-authored-8d790255c7981b673b8a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dormência no mediano + noturna + Tinel: 11,5 (ainda intermediária)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Intermediate probability (between about 25% and 80%)",
+            "locale": "en",
+            "template": "documented-authored-8c8211a71b664dacdcdf"
+          },
+          "note": {
+            "text": "Electroneuromyography has more value in this range.",
+            "locale": "en",
+            "template": "documented-authored-8d790255c7981b673b8a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dormência noturna + Phalen + Tinel: 13",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "High probability of carpal tunnel syndrome (about 80% or more)",
+            "locale": "en",
+            "template": "documented-authored-d82b601c5de285b4a7e1"
+          },
+          "note": {
+            "text": "In this range, electroneuromyography rarely changes the clinical diagnosis.",
+            "locale": "en",
+            "template": "documented-authored-eaab5ed484f3a84d7437"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Só dormência no território do mediano: 3,5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Baja probabilidad de síndrome del túnel carpiano (por debajo de aproximadamente el 25%)",
+            "locale": "es",
+            "template": "documented-authored-e06829abb2b68f58b061"
+          },
+          "note": {
+            "text": "Considere diagnósticos alternativos (radiculopatía cervical, polineuropatía).",
+            "locale": "es",
+            "template": "documented-authored-c451a74239ea24766a6f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dormência noturna + Phalen: 9",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilidad intermedia (entre aproximadamente el 25% y el 80%)",
+            "locale": "es",
+            "template": "documented-authored-8c8211a71b664dacdcdf"
+          },
+          "note": {
+            "text": "La electroneuromiografía tiene más valor en este rango.",
+            "locale": "es",
+            "template": "documented-authored-8d790255c7981b673b8a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dormência no mediano + noturna + Tinel: 11,5 (ainda intermediária)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilidad intermedia (entre aproximadamente el 25% y el 80%)",
+            "locale": "es",
+            "template": "documented-authored-8c8211a71b664dacdcdf"
+          },
+          "note": {
+            "text": "La electroneuromiografía tiene más valor en este rango.",
+            "locale": "es",
+            "template": "documented-authored-8d790255c7981b673b8a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dormência noturna + Phalen + Tinel: 13",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alta probabilidad de síndrome del túnel carpiano (aproximadamente el 80% o más)",
+            "locale": "es",
+            "template": "documented-authored-d82b601c5de285b4a7e1"
+          },
+          "note": {
+            "text": "En este rango, la electroneuromiografía rara vez cambia el diagnóstico clínico.",
+            "locale": "es",
+            "template": "documented-authored-eaab5ed484f3a84d7437"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Só dormência no território do mediano: 3,5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Faible probabilité de syndrome du canal carpien (inférieure à environ 25%)",
+            "locale": "fr",
+            "template": "documented-authored-e06829abb2b68f58b061"
+          },
+          "note": {
+            "text": "Envisager des diagnostics alternatifs (radiculopathie cervicale, polyneuropathie).",
+            "locale": "fr",
+            "template": "documented-authored-c451a74239ea24766a6f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dormência noturna + Phalen: 9",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilité intermédiaire (entre environ 25% et 80%)",
+            "locale": "fr",
+            "template": "documented-authored-8c8211a71b664dacdcdf"
+          },
+          "note": {
+            "text": "L’électroneuromyographie est plus utile dans cette plage.",
+            "locale": "fr",
+            "template": "documented-authored-8d790255c7981b673b8a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dormência no mediano + noturna + Tinel: 11,5 (ainda intermediária)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilité intermédiaire (entre environ 25% et 80%)",
+            "locale": "fr",
+            "template": "documented-authored-8c8211a71b664dacdcdf"
+          },
+          "note": {
+            "text": "L’électroneuromyographie est plus utile dans cette plage.",
+            "locale": "fr",
+            "template": "documented-authored-8d790255c7981b673b8a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dormência noturna + Phalen + Tinel: 13",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Forte probabilité de syndrome du canal carpien (environ 80% ou plus)",
+            "locale": "fr",
+            "template": "documented-authored-d82b601c5de285b4a7e1"
+          },
+          "note": {
+            "text": "Dans cette plage, l’électroneuromyographie modifie rarement le diagnostic clinique.",
+            "locale": "fr",
+            "template": "documented-authored-eaab5ed484f3a84d7437"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Só dormência no território do mediano: 3,5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Geringe Wahrscheinlichkeit eines Karpaltunnelsyndroms (unter etwa 25%)",
+            "locale": "de",
+            "template": "documented-authored-e06829abb2b68f58b061"
+          },
+          "note": {
+            "text": "Alternative Diagnosen erwägen (zervikale Radikulopathie, Polyneuropathie).",
+            "locale": "de",
+            "template": "documented-authored-c451a74239ea24766a6f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dormência noturna + Phalen: 9",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mittlere Wahrscheinlichkeit (zwischen etwa 25% und 80%)",
+            "locale": "de",
+            "template": "documented-authored-8c8211a71b664dacdcdf"
+          },
+          "note": {
+            "text": "Die Elektroneuromyographie ist in diesem Bereich wertvoller.",
+            "locale": "de",
+            "template": "documented-authored-8d790255c7981b673b8a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dormência no mediano + noturna + Tinel: 11,5 (ainda intermediária)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mittlere Wahrscheinlichkeit (zwischen etwa 25% und 80%)",
+            "locale": "de",
+            "template": "documented-authored-8c8211a71b664dacdcdf"
+          },
+          "note": {
+            "text": "Die Elektroneuromyographie ist in diesem Bereich wertvoller.",
+            "locale": "de",
+            "template": "documented-authored-8d790255c7981b673b8a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dormência noturna + Phalen + Tinel: 13",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Hohe Wahrscheinlichkeit eines Karpaltunnelsyndroms (etwa 80% oder mehr)",
+            "locale": "de",
+            "template": "documented-authored-d82b601c5de285b4a7e1"
+          },
+          "note": {
+            "text": "In diesem Bereich ändert die Elektroneuromyographie die klinische Diagnose selten.",
+            "locale": "de",
+            "template": "documented-authored-eaab5ed484f3a84d7437"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Só dormência no território do mediano: 3,5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Bassa probabilità di sindrome del tunnel carpale (inferiore a circa il 25%)",
+            "locale": "it",
+            "template": "documented-authored-e06829abb2b68f58b061"
+          },
+          "note": {
+            "text": "Considerare diagnosi alternative (radicolopatia cervicale, polineuropatia).",
+            "locale": "it",
+            "template": "documented-authored-c451a74239ea24766a6f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dormência noturna + Phalen: 9",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilità intermedia (tra circa il 25% e l’80%)",
+            "locale": "it",
+            "template": "documented-authored-8c8211a71b664dacdcdf"
+          },
+          "note": {
+            "text": "L’elettroneuromiografia ha più valore in questo intervallo.",
+            "locale": "it",
+            "template": "documented-authored-8d790255c7981b673b8a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dormência no mediano + noturna + Tinel: 11,5 (ainda intermediária)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Probabilità intermedia (tra circa il 25% e l’80%)",
+            "locale": "it",
+            "template": "documented-authored-8c8211a71b664dacdcdf"
+          },
+          "note": {
+            "text": "L’elettroneuromiografia ha più valore in questo intervallo.",
+            "locale": "it",
+            "template": "documented-authored-8d790255c7981b673b8a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dormência noturna + Phalen + Tinel: 13",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alta probabilità di sindrome del tunnel carpale (circa l’80% o più)",
+            "locale": "it",
+            "template": "documented-authored-d82b601c5de285b4a7e1"
+          },
+          "note": {
+            "text": "In questo intervallo, l’elettromiografia modifica raramente la diagnosi clinica.",
+            "locale": "it",
+            "template": "documented-authored-eaab5ed484f3a84d7437"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Só dormência no território do mediano: 3,5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "احتمال منخفض لمتلازمة النفق الرسغي (أقل من حوالي 25%)",
+            "locale": "ar",
+            "template": "documented-authored-e06829abb2b68f58b061"
+          },
+          "note": {
+            "text": "ضع في الاعتبار تشخيصات بديلة (اعتلال الجذور العنقية، اعتلال الأعصاب المتعدد).",
+            "locale": "ar",
+            "template": "documented-authored-c451a74239ea24766a6f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dormência noturna + Phalen: 9",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "احتمال متوسط (بين حوالي 25% و80%)",
+            "locale": "ar",
+            "template": "documented-authored-8c8211a71b664dacdcdf"
+          },
+          "note": {
+            "text": "للتخطيط العصبي العضلي الكهربائي قيمة أكبر في هذه الفئة.",
+            "locale": "ar",
+            "template": "documented-authored-8d790255c7981b673b8a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dormência no mediano + noturna + Tinel: 11,5 (ainda intermediária)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "احتمال متوسط (بين حوالي 25% و80%)",
+            "locale": "ar",
+            "template": "documented-authored-8c8211a71b664dacdcdf"
+          },
+          "note": {
+            "text": "للتخطيط العصبي العضلي الكهربائي قيمة أكبر في هذه الفئة.",
+            "locale": "ar",
+            "template": "documented-authored-8d790255c7981b673b8a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dormência noturna + Phalen + Tinel: 13",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "احتمال مرتفع لمتلازمة النفق الرسغي (حوالي 80% أو أكثر)",
+            "locale": "ar",
+            "template": "documented-authored-d82b601c5de285b4a7e1"
+          },
+          "note": {
+            "text": "في هذه الفئة، نادرًا ما يغيّر التخطيط العصبي العضلي الكهربائي التشخيص السريري.",
+            "locale": "ar",
+            "template": "documented-authored-eaab5ed484f3a84d7437"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Só dormência no território do mediano: 3,5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "腕管综合征低概率（约低于25%）",
+            "locale": "zh",
+            "template": "documented-authored-e06829abb2b68f58b061"
+          },
+          "note": {
+            "text": "考虑其他诊断（颈神经根病、多发性周围神经病）。",
+            "locale": "zh",
+            "template": "documented-authored-c451a74239ea24766a6f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dormência noturna + Phalen: 9",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等概率（约25%至80%之间）",
+            "locale": "zh",
+            "template": "documented-authored-8c8211a71b664dacdcdf"
+          },
+          "note": {
+            "text": "在此范围内，肌电神经图更有价值。",
+            "locale": "zh",
+            "template": "documented-authored-8d790255c7981b673b8a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dormência no mediano + noturna + Tinel: 11,5 (ainda intermediária)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等概率（约25%至80%之间）",
+            "locale": "zh",
+            "template": "documented-authored-8c8211a71b664dacdcdf"
+          },
+          "note": {
+            "text": "在此范围内，肌电神经图更有价值。",
+            "locale": "zh",
+            "template": "documented-authored-8d790255c7981b673b8a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dormência noturna + Phalen + Tinel: 13",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "腕管综合征高概率（约80%或以上）",
+            "locale": "zh",
+            "template": "documented-authored-d82b601c5de285b4a7e1"
+          },
+          "note": {
+            "text": "在此范围内，肌电神经图很少改变临床诊断。",
+            "locale": "zh",
+            "template": "documented-authored-eaab5ed484f3a84d7437"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Só dormência no território do mediano: 3,5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "手根管症候群の可能性は低い（約25%未満）",
+            "locale": "ja",
+            "template": "documented-authored-e06829abb2b68f58b061"
+          },
+          "note": {
+            "text": "代替診断を考慮する（頸椎神経根症、多発ニューロパチー）。",
+            "locale": "ja",
+            "template": "documented-authored-c451a74239ea24766a6f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dormência noturna + Phalen: 9",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中間確率（約25%から80%の間）",
+            "locale": "ja",
+            "template": "documented-authored-8c8211a71b664dacdcdf"
+          },
+          "note": {
+            "text": "この範囲では電気神経筋検査の有用性が高い。",
+            "locale": "ja",
+            "template": "documented-authored-8d790255c7981b673b8a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dormência no mediano + noturna + Tinel: 11,5 (ainda intermediária)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中間確率（約25%から80%の間）",
+            "locale": "ja",
+            "template": "documented-authored-8c8211a71b664dacdcdf"
+          },
+          "note": {
+            "text": "この範囲では電気神経筋検査の有用性が高い。",
+            "locale": "ja",
+            "template": "documented-authored-8d790255c7981b673b8a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dormência noturna + Phalen + Tinel: 13",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "手根管症候群の可能性が高い（約80%以上）",
+            "locale": "ja",
+            "template": "documented-authored-d82b601c5de285b4a7e1"
+          },
+          "note": {
+            "text": "この範囲では、電気神経筋検査が臨床診断を変えることはまれです。",
+            "locale": "ja",
+            "template": "documented-authored-eaab5ed484f3a84d7437"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Só dormência no território do mediano: 3,5",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "कार्पल टनल सिंड्रोम की कम संभावना (लगभग 25% से कम)",
+            "locale": "hi",
+            "template": "documented-authored-e06829abb2b68f58b061"
+          },
+          "note": {
+            "text": "वैकल्पिक निदान पर विचार करें (सर्वाइकल रेडिकुलोपैथी, पॉलीन्यूरोपैथी)।",
+            "locale": "hi",
+            "template": "documented-authored-c451a74239ea24766a6f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Dormência noturna + Phalen: 9",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "मध्यम संभावना (लगभग 25% और 80% के बीच)",
+            "locale": "hi",
+            "template": "documented-authored-8c8211a71b664dacdcdf"
+          },
+          "note": {
+            "text": "इस सीमा में इलेक्ट्रोन्यूरोमायोग्राफी अधिक उपयोगी है।",
+            "locale": "hi",
+            "template": "documented-authored-8d790255c7981b673b8a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dormência no mediano + noturna + Tinel: 11,5 (ainda intermediária)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "मध्यम संभावना (लगभग 25% और 80% के बीच)",
+            "locale": "hi",
+            "template": "documented-authored-8c8211a71b664dacdcdf"
+          },
+          "note": {
+            "text": "इस सीमा में इलेक्ट्रोन्यूरोमायोग्राफी अधिक उपयोगी है।",
+            "locale": "hi",
+            "template": "documented-authored-8d790255c7981b673b8a"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Dormência noturna + Phalen + Tinel: 13",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "कार्पल टनल सिंड्रोम की उच्च संभावना (लगभग 80% या अधिक)",
+            "locale": "hi",
+            "template": "documented-authored-d82b601c5de285b4a7e1"
+          },
+          "note": {
+            "text": "इस सीमा में इलेक्ट्रोन्यूरोमायोग्राफी शायद ही कभी नैदानिक निदान बदलती है।",
+            "locale": "hi",
+            "template": "documented-authored-eaab5ed484f3a84d7437"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

@@ -77,3 +77,35 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Probabilidade baixa de síndrome do túnel do carpo (abaixo de cerca de 25%)
+
+Considere diagnósticos alternativos (radiculopatia cervical, polineuropatia).
+
+
+### 2
+
+Probabilidade intermediária (entre cerca de 25% e 80%)
+
+A eletroneuromiografia tem mais valor nesta faixa.
+
+
+### 3
+
+Probabilidade intermediária (entre cerca de 25% e 80%)
+
+A eletroneuromiografia tem mais valor nesta faixa.
+
+
+### 4
+
+Alta probabilidade de síndrome do túnel do carpo (cerca de 80% ou mais)
+
+Nesta faixa, a eletroneuromiografia raramente muda o diagnóstico clínico.
+
